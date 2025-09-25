@@ -1,0 +1,5 @@
+if SHIELD_40ERTHO
+
+config ZMK_40ERTHO
+	default "40ertho"
+endif
