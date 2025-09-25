@@ -1,5 +1,6 @@
 if SHIELD_40ERTHO
 
-config ZMK_40ERTHO
-	default "40ertho"
+config ZMK_KEYBOARD_NAME
+    default "40ertho"
+
 endif
