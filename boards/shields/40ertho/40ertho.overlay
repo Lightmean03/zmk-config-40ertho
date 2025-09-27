@@ -1,9 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "40ertho_layout.dtsi"
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &40ertho_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -26,8 +28,8 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9) 
         row-gpios
             = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D1 (top row)
             , <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D0 (second row)
-            , <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D2 (third row)
-            , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D3 (bottom row)
+            , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D3 (third row)
+            , <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D2 (bottom row)
             ;
         col-gpios
             = <&pro_micro 7 GPIO_ACTIVE_HIGH>    // D7 (leftmost - Esc/Tab/Shift/Ctrl)
