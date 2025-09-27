@@ -3,4 +3,7 @@ if SHIELD_40ERTHO
 config ZMK_KEYBOARD_NAME
     default "40ertho"
 
+config ZMK_STUDIO
+    default y
+
 endif
