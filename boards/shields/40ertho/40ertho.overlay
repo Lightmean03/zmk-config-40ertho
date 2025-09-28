@@ -41,7 +41,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9) 
             , <&pro_micro 18 GPIO_ACTIVE_HIGH>   // D15 (U/J/M/Raise)
             , <&pro_micro 15 GPIO_ACTIVE_HIGH>   // D14 (I/K/,/Fn)
             , <&pro_micro 14 GPIO_ACTIVE_HIGH>   // D16 (O/L/>/←)
-            , <&pro_micro 16 GPIO_ACTIVE_HIGH>   // D21 (P/;/↑/↓)
+            , <&pro_micro 16 GPIO_ACTIVE_HIGH>   // D4 (P/;/↑/↓)
             , <&pro_micro 10 GPIO_ACTIVE_HIGH>   // D10 (rightmost - Bksp/Enter/?/→)
             ;
     };
