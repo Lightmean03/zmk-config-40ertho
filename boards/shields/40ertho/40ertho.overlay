@@ -24,11 +24,12 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(3,8) RC(3,9) 
         label = "KSCAN";
 
         diode-direction = "col2row";
+        // TEST: row 0 and row 3 swapped to check if physical top row is on D2 pin
         row-gpios
-            = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D21 (top row)
+            = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D2 -> now row 0 (top)
             , <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D0 (second row)
             , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D3 (third row)
-            , <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D2 (bottom row)
+            , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // D21 -> now row 3 (bottom)
             ;
         col-gpios
             = <&pro_micro 7 GPIO_ACTIVE_HIGH>    // D7 (leftmost - Esc/Tab/Shift/Ctrl)
